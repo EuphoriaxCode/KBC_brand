@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KBC brand preview</title>
+<link rel="stylesheet" href="tokens/kbc-tokens.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:"MuseoSans","Nunito Sans",system-ui,sans-serif;font-weight:300;font-size:16px;line-height:24px;color:var(--kdl-color-primary-main);background:var(--kdl-color-background-default)}
+main{max-width:1100px;margin:0 auto;padding:0 16px 64px}
+header{display:flex;align-items:center;gap:16px;padding:16px;border-bottom:1px solid var(--kdl-color-primary-main-100)}
+header img{height:48px}
+h1{font-size:30px;line-height:36px;font-weight:700;margin:32px 0 8px}
+h2{font-size:20px;line-height:28px;font-weight:700;margin:48px 0 16px}
+a{color:var(--kdl-color-primary-accent-600)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.sw{border-radius:8px;overflow:hidden;box-shadow:0 4px 16px rgba(0,54,101,.08);background:#fff;font-size:12px;line-height:16px}
+.sw i{display:block;height:64px}.sw div{padding:8px}.sw b{display:block;font-weight:700}
+.btn{display:inline-block;padding:12px 24px;border-radius:100px;font-weight:500;text-decoration:none;margin-right:8px;cursor:pointer}
+.cta{background:var(--kdl-color-secondary-01);color:#fff}
+.sec{border:1px solid var(--kdl-color-primary-accent);color:var(--kdl-color-primary-accent-600)}
+.sec:hover{background:var(--kdl-color-primary-accent);color:#fff}
+.dis{background:#F2FAFF;color:#7394C2;cursor:not-allowed}
+.card{background:#fff;border-radius:8px;box-shadow:0 4px 16px rgba(0,54,101,.08);padding:24px}
+.hero{background:var(--kdl-color-primary-accent-25);border-radius:8px;padding:32px}
+.biz{background:var(--kdl-color-primary-main);color:#fff;border-radius:8px;padding:32px}
+.biz .btn.sec{border-color:#fff;color:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:767px){.two{grid-template-columns:1fr}}
+.st{padding:12px 16px;border-radius:8px;margin-bottom:8px;border-left:4px solid}
+</style></head><body>
+<header><img src="assets/logos/kbc-logo.svg" alt="KBC"><strong>Brand preview</strong></header>
+<main>
+<h1>KBC brand preview</h1><p>Afgeleid van kbc.be. Lettertype: Nunito Sans als stand-in voor MuseoSans.</p>
+
+<h2>Kernkleuren</h2><div class="grid" id="core"></div>
+<h2>Systeem &amp; secundair</h2><div class="grid" id="sys"></div>
+<h2>Chart-reeks</h2><div class="grid" id="chart"></div>
+
+<h2>Typografie</h2>
+<div class="card"><h1 style="margin-top:0">H1 – Zorgeloos je wagen verzekeren?</h1>
+<h2 style="margin:0 0 8px">H2 – No stress. Kate it.</h2>
+<p>Body (300, 16/24): Op onze website kun je je aanmelden in KBC Touch en vind je alle info over zicht- en spaarrekeningen, leningen, hypotheek en beleggen. We helpen je graag.</p>
+<p style="color:var(--kdl-color-primary-main-300);font-size:14px;font-weight:500">Secundaire tekst 14px / 500</p></div>
+
+<h2>Knoppen</h2>
+<p><a class="btn cta">Ontdek nu</a><a class="btn sec">Maak een afspraak</a><a class="btn dis">Niet beschikbaar</a></p>
+
+<h2>Statussen</h2>
+<div class="st" style="background:#EFF6FF;border-color:#0D2A50">Info</div>
+<div class="st" style="background:#EEFFE4;border-color:#5BA215">Succes</div>
+<div class="st" style="background:#FFF7F1;border-color:#DC7507">Waarschuwing</div>
+<div class="st" style="background:#FFF6F5;border-color:#D64040">Fout</div>
+
+<h2>Particulieren vs. Ondernemen</h2>
+<div class="two">
+<div class="hero"><h1 style="margin-top:0">Zorgeloos je wagen verzekeren?</h1><p>Particulieren – accentblauw</p><a class="btn cta">Ontdek nu</a></div>
+<div class="biz"><h1 style="margin-top:0">Blijf cashflex</h1><p>Ondernemen – navy als anker</p><a class="btn sec">Maak een afspraak</a></div>
+</div>
+</main>
+<script>
+const t=n=>getComputedStyle(document.documentElement).getPropertyValue('--kdl-color-'+n).trim();
+function fill(id,names){document.getElementById(id).innerHTML=names.map(n=>`<div class="sw"><i style="background:var(--kdl-color-${n})"></i><div><b>${n}</b>${t(n)}</div></div>`).join('')}
+fill('core',['primary-accent','primary-accent-600','primary-accent-100','primary-accent-25','primary-main','primary-main-600','primary-main-300','primary-main-200','primary-main-100','primary-main-25','surface-background']);
+fill('sys',['secondary-01','secondary-02','secondary-03','tertiary-01','tertiary-02','tertiary-03','tertiary-04','tertiary-05','tertiary-06','system-success','system-warning','system-error','sustainability-green']);
+fill('chart',Array.from({length:10},(_,i)=>'func-chart-'+String(i+1).padStart(2,'0')));
+</script></body></html>
