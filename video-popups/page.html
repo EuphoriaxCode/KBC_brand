@@ -1,16 +1,20 @@
 <!doctype html><meta charset="utf-8">
-<style>@font-face{font-family:"Nunito Sans";src:url(n700.ttf);font-weight:700}</style>
-<style>
+<style>@font-face{font-family:"Nunito Sans";src:url(n700.ttf);font-weight:700}
 html,body{margin:0;background:transparent;width:1920px;height:1080px;overflow:hidden}
-.pop{position:absolute;left:96px;bottom:96px;display:flex;align-items:center;height:112px;padding:0 56px;
- background:#fff;border-radius:8px;box-shadow:0 4px 16px rgba(0,54,101,.16);font-family:"Nunito Sans",sans-serif;color:#0D2A50;overflow:hidden;
- animation:card 5s cubic-bezier(.2,.8,.2,1) both}
-.pop img{height:88px;width:88px;padding-right:28px;border-right:1px solid #BFDAFF;box-sizing:content-box}
-.name{font-weight:700;font-size:48px;line-height:56px;white-space:nowrap;letter-spacing:-.2px}
-.bar{position:absolute;left:0;bottom:0;height:5px;background:#0097DB;width:100%;transform-origin:left;animation:bar 5s cubic-bezier(.2,.8,.2,1) both}
-@keyframes card{0%{opacity:0;transform:translateX(-48px)}10%{opacity:1;transform:none}90%{opacity:1;transform:none}100%{opacity:0;transform:translateX(-24px)}}
-@keyframes bar{0%,6%{transform:scaleX(0)}22%,100%{transform:scaleX(1)}}
-body.still .pop,body.still .bar{animation:none}
+:root{--e:cubic-bezier(.65,0,.35,1)}
+.pop{position:absolute;bottom:96px;display:flex;align-items:center;justify-content:center;height:112px;padding:0 72px;background:#fff;border-radius:56px;
+ box-shadow:0 4px 16px rgba(0,54,101,.16);font-family:"Nunito Sans",sans-serif;color:#0D2A50;overflow:hidden;animation:card 5.5s var(--e) both}
+.name{position:relative;font-weight:700;font-size:48px;line-height:56px;white-space:nowrap;letter-spacing:-.2px;animation:name 5.5s var(--e) both}
+.bar{position:absolute;left:0;bottom:0;height:5px;width:100%;background:#0097DB;animation:bar 5.5s var(--e) both}
+.fill{position:absolute;inset:0;background:#0097DB;transform-origin:bottom;animation:fill 5.5s var(--e) both}
+.left{left:96px;--from:inset(-40px 100% -40px 0)}.left .bar{transform-origin:left}
+.center{left:50%;translate:-50% 0;--from:inset(-40px 50% -40px 50%)}.center .bar{transform-origin:center}
+.right{right:96px;--from:inset(-40px 0 -40px 100%)}.right .bar{transform-origin:right}
+@keyframes card{0%,2.7%{clip-path:var(--from)}11.8%,83.6%{clip-path:inset(-40px)}94.5%,100%{clip-path:var(--from)}}
+@keyframes bar{0%{transform:scaleX(0)}9.1%,100%{transform:scaleX(1)}}
+@keyframes name{0%,7.3%{opacity:0;transform:translateY(10px)}14.5%,100%{opacity:1;transform:none}}
+@keyframes fill{0%,72.7%{transform:scaleY(0)}83.6%,100%{transform:scaleY(1)}}
+body.still *{animation:none!important}body.still .fill{display:none}
 </style>
-<div class="pop"><div class="name" id="n"></div><div class="bar"></div></div>
-<script>const q=new URLSearchParams(location.search);document.getElementById('n').textContent=q.get('n');if(q.get('still'))document.body.className='still'</script>
+<div class="pop" id="p"><div class="name" id="n"></div><div class="bar"></div><div class="fill"></div></div>
+<script>const q=new URLSearchParams(location.search);document.getElementById('n').textContent=q.get('n');document.getElementById('p').classList.add(q.get('pos'));if(q.get('still'))document.body.className='still'</script>
