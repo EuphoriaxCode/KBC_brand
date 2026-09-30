@@ -1,10 +1,19 @@
 # Prompt: naam-pop-ups (lower thirds) voor een ander bedrijf
 
-Plak dit in de andere chat. Die chat kent het bedrijf en de data (namen, huisstijl); vul niets zelf in.
+Plak dit in de andere chat. Die chat kent het bedrijf en de data (huisstijl); de namen en posities staan hieronder.
 
 ---
 
-Maak voor **[het bedrijf uit deze chat]** pop-ups met de namen van ons team, om in een video te plakken (die ik monteer in **CapCut**). Doe hetzelfde als in het KBC-voorbeeld hieronder, maar dan in de huisstijl van dit bedrijf.
+Maak voor **[het bedrijf uit deze chat]** pop-ups met de namen van ons team (drie personen, zie tabel), om in een video te plakken (die ik monteer in **CapCut**). Doe hetzelfde als in het KBC-voorbeeld hieronder, maar dan in de huisstijl van dit bedrijf.
+
+## Onze namen en positie in beeld
+| Naam | Positie in de video | Animatie start vanaf |
+|---|---|---|
+| Aeon Bonjé | links | links |
+| Rune Vanhoucke | midden | het midden, naar beide kanten |
+| Arno Cuyvers | rechts | rechts |
+
+Schrijf de namen exact zo (met de é in Bonjé). Bestandsnamen: `aeon`, `rune`, `arno`.
 
 ## Wat ik wil
 - Per persoon één **transparante clip** (1920x1080, 30 fps, 5,5 s), naam in de huisstijl van het bedrijf: hun echte kleuren, hun lettertype (of de dichtstbijzijnde Google Font als het gelicentieerd is), hun vorm (afgeronde hoeken/pill/rechthoek zoals hun UI). Zoek de huisstijl online of in de data van deze chat; verzin geen kleuren.
