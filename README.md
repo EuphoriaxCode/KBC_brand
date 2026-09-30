@@ -8,6 +8,13 @@ Volledig overzicht van de KBC-huisstijl, bedoeld als referentie wanneer we een p
 > Het is **geen officiële brand guideline** van KBC. Logo's en merknaam zijn eigendom van KBC Groep NV; gebruik ze
 > alleen met toestemming van de opdrachtgever. Het lettertype MuseoSans is commercieel (exljbris) en zit niet in deze repo.
 
+## Gebruik in een nieuw project / hackathon
+1. Voeg deze repo toe aan je project (kopieer de map of laat Claude ze clonen).
+2. **`CLAUDE.md`** wordt automatisch gelezen en bevat de kernregels van de stijl; Claude weet dan meteen hoe te stylen.
+3. Start vanuit [`starter/index.html`](starter/index.html) + [`starter/kbc.css`](starter/kbc.css) (header, hero, tegels, USP-blokken, contact, footer, knoppen, formulieren, alerts).
+
+Prompt om te plakken: *"Lees CLAUDE.md in de KBC_brand repo en bouw <ons idee> in die stijl, vertrekkend vanuit starter/."*
+
 ## Inhoud
 
 | Bestand | Wat |
@@ -20,6 +27,8 @@ Volledig overzicht van de KBC-huisstijl, bedoeld als referentie wanneer we een p
 | [`docs/06-voice-and-tone.md`](docs/06-voice-and-tone.md) | Taal, schrijfstijl, voorbeeldteksten |
 | [`docs/07-implementation-guide.md`](docs/07-implementation-guide.md) | Praktisch: hoe gebruik je dit in een project + checklist |
 | [`tokens/kbc-tokens.css`](tokens/kbc-tokens.css) / [`.json`](tokens/kbc-tokens.json) | Alle echte KBC design tokens (4 thema's) |
+| [`CLAUDE.md`](CLAUDE.md) | Compacte stijlregels, auto-geladen door Claude Code |
+| [`starter/`](starter) | `kbc.css` (componenten) + `index.html` (voorbeeldpagina) |
 | [`brand-preview.html`](brand-preview.html) | Visuele preview: kleuren, typografie, knoppen, kaarten |
 | [`assets/logos/`](assets/logos) | KBC-logo (SVG) |
 
