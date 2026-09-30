@@ -2,7 +2,7 @@
 <style>@font-face{font-family:"Nunito Sans";src:url(n700.ttf);font-weight:700}</style>
 <style>
 html,body{margin:0;background:transparent;width:1920px;height:1080px;overflow:hidden}
-.pop{position:absolute;left:96px;bottom:96px;display:flex;align-items:center;gap:28px;height:112px;padding:0 56px 0 20px;
+.pop{position:absolute;left:96px;bottom:96px;display:flex;align-items:center;height:112px;padding:0 56px;
  background:#fff;border-radius:8px;box-shadow:0 4px 16px rgba(0,54,101,.16);font-family:"Nunito Sans",sans-serif;color:#0D2A50;overflow:hidden;
  animation:card 5s cubic-bezier(.2,.8,.2,1) both}
 .pop img{height:88px;width:88px;padding-right:28px;border-right:1px solid #BFDAFF;box-sizing:content-box}
@@ -12,5 +12,5 @@ html,body{margin:0;background:transparent;width:1920px;height:1080px;overflow:hi
 @keyframes bar{0%,6%{transform:scaleX(0)}22%,100%{transform:scaleX(1)}}
 body.still .pop,body.still .bar{animation:none}
 </style>
-<div class="pop"><img src="kbc-logo.svg"><div class="name" id="n"></div><div class="bar"></div></div>
+<div class="pop"><div class="name" id="n"></div><div class="bar"></div></div>
 <script>const q=new URLSearchParams(location.search);document.getElementById('n').textContent=q.get('n');if(q.get('still'))document.body.className='still'</script>

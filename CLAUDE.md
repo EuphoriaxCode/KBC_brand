@@ -13,7 +13,7 @@ Details staan in `docs/`, tokens in `tokens/kbc-tokens.css`, kant-en-klare compo
 - **Toon:** Nederlands, informeel **je/jouw**, korte koppen (vaak vraag/belofte), concreet, geen jargon. Digitale assistent heet **Kate**. Schrijf "KBC" in hoofdletters.
 - **Layout:** mobile-first, breakpoints 576/768/992/1200/1440. Hero → tegels "Waarmee kunnen we je helpen?" → USP-blokken (beeld + tekst) → contactblok → footer.
 - **Toegankelijkheid:** tekstcontrast ≥ 4.5:1 (wit op `#0097DB` alleen voor grote/vette tekst), zichtbare focus (dashed outline, offset 4 px).
-- **Logo:** `assets/logos/kbc-logo.svg`, niet vervormen of herkleuren. Voor een hackathon/demo prima; vermeld dat het een niet-officiële demo is.
+- **Logo & hackathon (belangrijk):** dit is een hackathon-project. Wij zijn **niet KBC** en spreken niet namens KBC. Stijl volgen = ja; KBC-identiteit claimen = nee. Gebruik dus **geen KBC-logo** (`assets/logos/`) op ons eigen werk: niet op video-pop-ups met onze namen, niet bij teamleden, niet als ons eigen merk. Geen tekst of layout die suggereert dat wij bij KBC werken of dat het een officieel KBC-product is. Het logo alleen tonen als het bewust over KBC zelf gaat, en dan vermelden dat het een niet-officiële demo is. Onze namen (Aeon Bonjé, Rune Vanhoucke, Arno Cuyvers) staan in KBC-stijl (kleur, font, kaart, pill) maar zonder logo.
 
 ## Werkwijze
 1. Lees deze file, daarna `starter/index.html` en `starter/kbc.css`.

@@ -1,6 +1,8 @@
 # 4. Logo, iconen, beeld
 
 ## Logo
+> **Hackathon-regel:** wij zijn niet KBC. Gebruik het KBC-logo **niet** op ons eigen werk (o.a. video-pop-ups met teamnamen). Alleen de stijl (kleur, font, vormen) volgen, zonder KBC-identiteit te claimen. Zie `CLAUDE.md`.
+
 Bestand: [`assets/logos/kbc-logo.svg`](../assets/logos/kbc-logo.svg) (huidig, 320×320 viewBox).
 - **Opbouw:** blauwe halve zon (cirkel + golf/horizon) `#0097DB` boven het woordmerk **KBC** in navy `#0D2A50`.
 - **Kleuren:** enkel `#0097DB` + `#0D2A50` op wit. Voor donkere achtergrond: wit woordmerk + blauwe zon (of volledig wit).
