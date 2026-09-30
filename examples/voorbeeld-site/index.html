@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Je eerste woning – KBC-stijl voorbeeld</title>
+<meta name="description" content="Niet-officiële demopagina in KBC-stijl, gebouwd met de KBC brand kit.">
+<link rel="icon" href="../../assets/logos/kbc-logo.svg">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../tokens/kbc-tokens.css">
+<link rel="stylesheet" href="../../starter/kbc.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<!-- Lucide-lijniconen (ISC), als sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-phone-app" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Ga naar de inhoud</a>
+
+<div class="topbar"><div class="container"><a class="active" href="#" aria-current="page">Particulieren</a><a href="#">Ondernemen</a></div></div>
+<header class="nav"><div class="container">
+  <a href="#"><img src="../../assets/logos/kbc-logo.svg" alt="KBC – naar de startpagina"></a>
+  <nav class="nav__links" aria-label="Hoofdmenu"><a href="#">Rekeningen</a><a href="#">Wonen</a><a href="#">Sparen &amp; beleggen</a><a href="#">Verzekeren</a></nav>
+  <span class="spacer"></span>
+  <a class="nav__search" href="#"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>Zoeken</a>
+  <a class="btn btn--secondary" href="#">Aanmelden</a>
+</div></header>
+
+<main id="main">
+<section class="hero"><div class="container">
+  <div class="hero__text">
+    <span class="tag">Wonen</span>
+    <h1>Klaar voor je eerste eigen plek?</h1>
+    <h2 class="muted">Wij rekenen mee, jij kiest.</h2>
+    <p>Ontdek in twee minuten hoeveel je kunt lenen en wat dat maandelijks betekent. Zonder verplichtingen.</p>
+    <div class="hero__actions">
+      <a class="btn btn--cta" href="#simulator">Bereken je lening</a>
+      <a class="btn btn--secondary" href="#contact">Maak een afspraak</a>
+    </div>
+  </div>
+  <div class="hero__visual" role="img" aria-label="Illustratie van een huis met een chatbericht van Kate">
+    <svg class="scene" viewBox="0 0 400 220" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+      <path d="M0 190 Q100 160 200 180 T400 170 V220 H0Z" fill="#fff" opacity=".25"/>
+      <g fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round">
+        <path d="M70 180 V110 L140 60 L210 110 V180 Z"/><path d="M120 180 v-40 h40 v40"/><rect x="165" y="120" width="28" height="24"/>
+      </g>
+    </svg>
+    <div class="kate"><div class="card">
+      <div class="kate__head"><span class="kate__avatar" aria-hidden="true">K</span><strong>Kate</strong></div>
+      <p>Hoi! Ik zet je leensimulatie klaar. Wil je meteen een afspraak met een woonexpert?</p>
+    </div></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="container">
+  <h2 class="center">Waarmee kunnen we je helpen?</h2>
+  <div class="grid grid--4">
+    <a class="card" href="#"><div class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></div><h3>Woning kopen</h3><p class="muted">Van eerste bezoek tot sleutel</p></a>
+    <a class="card" href="#"><div class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-wallet"/></svg></div><h3>Woonkrediet</h3><p class="muted">Bereken wat je kunt lenen</p></a>
+    <a class="card" href="#"><div class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></div><h3>Woningverzekering</h3><p class="muted">Brand, water en diefstal</p></a>
+    <a class="card" href="#"><div class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg></div><h3>Energiezuinig renoveren</h3><p class="muted">Premies en groene lening</p></a>
+  </div>
+</div></section>
+
+<section class="section section--tint"><div class="container">
+  <div class="usp">
+    <div class="usp__img" aria-hidden="true"><svg class="icon"><use href="#i-key"/></svg></div>
+    <div>
+      <h2>Snel duidelijkheid over je lening</h2>
+      <p>Je krijgt binnen twee werkdagen een persoonlijk voorstel. Zo weet je waar je staat voor je een bod doet.</p>
+      <ul class="checks">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Voorstel op maat, in gewone woorden</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Vaste of variabele rentevoet, jij kiest</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Alles digitaal ondertekenen</li>
+      </ul>
+      <a class="btn btn--secondary" href="#">Zo werkt het</a>
+    </div>
+  </div>
+  <div class="usp usp--reverse">
+    <div class="usp__img" aria-hidden="true"><svg class="icon"><use href="#i-leaf"/></svg></div>
+    <div>
+      <h2>Samen maken we je huis duurzamer</h2>
+      <p>Isoleren, zonnepanelen of een warmtepomp? Met een groene lening betaal je minder rente op energiebesparende werken.</p>
+      <a class="btn btn--secondary" href="#">Ontdek de groene lening</a>
+    </div>
+  </div>
+</div></section>
+
+<section class="section" id="simulator"><div class="container">
+  <h2>Hoeveel kun je lenen?</h2>
+  <p class="muted">Een eerste inschatting. Je persoonlijke voorstel kan afwijken.</p>
+  <div class="sim">
+    <form class="card" id="sim-form" novalidate>
+      <div class="field">
+        <label for="price">Prijs van de woning <output class="range-out" id="price-out" for="price"></output></label>
+        <input type="range" id="price" min="150000" max="600000" step="5000" value="320000">
+      </div>
+      <div class="field">
+        <label for="own">Eigen inbreng (€)</label>
+        <input type="number" id="own" inputmode="numeric" value="60000" min="0" aria-describedby="own-msg">
+        <p class="field__msg" id="own-msg" hidden></p>
+      </div>
+      <div class="field">
+        <label for="years">Looptijd</label>
+        <select id="years"><option value="20">20 jaar</option><option value="25" selected>25 jaar</option><option value="30">30 jaar</option></select>
+      </div>
+      <button class="btn btn--cta" type="submit">Vraag je voorstel aan</button>
+    </form>
+    <div class="sim__result" aria-live="polite">
+      <span class="muted">Geschat maandbedrag</span>
+      <div class="sim__amount" id="monthly">–</div>
+      <div class="sim__row"><span>Te lenen bedrag</span><strong id="loan">–</strong></div>
+      <div class="sim__row"><span>Rentevoet (vast, indicatief)</span><strong>3,20 %</strong></div>
+      <div class="sim__row"><span>Looptijd</span><strong id="term">–</strong></div>
+      <div class="alert alert--info" style="margin:16px 0 0">Tip: vraag Kate in de KBC Mobile-app om je simulatie te bewaren.</div>
+      <div class="alert alert--success" id="sent" hidden style="margin:12px 0 0">Gelukt! Een woonexpert neemt binnen twee werkdagen contact met je op.</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="section section--tint"><div class="container app">
+  <div>
+    <h2>Regel alles vanuit je zetel met KBC Mobile</h2>
+    <p>Volg je aanvraag, onderteken digitaal en stel je vragen aan Kate. Wanneer het jou past.</p>
+    <a class="btn btn--secondary" href="#">Download KBC Mobile</a>
+  </div>
+  <div class="app__phone" aria-hidden="true"><div><svg class="icon" style="width:40px;height:40px;color:var(--kdl-color-primary-accent)"><use href="#i-phone-app"/></svg><p class="small">Scan de QR-code</p></div></div>
+</div></section>
+
+<section class="section section--navy" id="contact"><div class="container center">
+  <h2>Contacteer ons waar en wanneer je maar wilt</h2>
+  <p>We zijn er voor jou, online en in je buurt.</p>
+  <div class="contact">
+    <a href="#"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Vind een kantoor</a>
+    <a href="#"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Maak een afspraak</a>
+    <a href="#"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Bel ons</a>
+    <a href="#"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Chat met Kate</a>
+  </div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="container">
+  <div class="footer__cols">
+    <div><h4>Wonen</h4><ul><li><a href="#">Woning kopen</a></li><li><a href="#">Woonkrediet</a></li><li><a href="#">Renoveren</a></li></ul></div>
+    <div><h4>Hulp</h4><ul><li><a href="#">Veelgestelde vragen</a></li><li><a href="#">Kantoren</a></li><li><a href="#">Chat met Kate</a></li></ul></div>
+    <div><h4>Over deze demo</h4><ul><li><a href="#">Privacy</a></li><li><a href="#">Cookies</a></li><li><a href="#">Toegankelijkheid</a></li></ul></div>
+  </div>
+  <p class="footer__legal">Niet-officiële demo in KBC-stijl, gemaakt met de KBC brand kit voor een hackathon. Cijfers zijn fictief. Let op, geld lenen kost ook geld.</p>
+</div></footer>
+
+<script>
+const fmt = n => n.toLocaleString('nl-BE', {style:'currency', currency:'EUR', maximumFractionDigits:0});
+const $ = id => document.getElementById(id);
+function calc(){
+  const price = +$('price').value, own = +$('own').value || 0, years = +$('years').value;
+  $('price-out').textContent = fmt(price);
+  const tooHigh = own >= price;
+  $('own-msg').hidden = !tooHigh;
+  $('own-msg').textContent = tooHigh ? 'Je eigen inbreng is hoger dan de prijs. Pas het bedrag aan.' : '';
+  $('own').closest('.field').classList.toggle('field--error', tooHigh);
+  const loan = Math.max(price - own, 0), r = 0.032 / 12, n = years * 12;
+  const m = loan ? loan * r / (1 - Math.pow(1 + r, -n)) : 0;
+  $('loan').textContent = fmt(loan); $('monthly').textContent = fmt(m) + ' /maand'; $('term').textContent = years + ' jaar';
+  return !tooHigh;
+}
+['price','own','years'].forEach(id => $(id).addEventListener('input', calc));
+$('sim-form').addEventListener('submit', e => { e.preventDefault(); $('sent').hidden = !calc(); });
+calc();
+</script>
+</body>
+</html>

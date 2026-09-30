@@ -26,7 +26,7 @@ a{color:var(--kdl-color-primary-accent-600)}
 .nav .spacer{flex:1}
 
 /* Buttons */
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:100px;border:1px solid transparent;font:500 16px/24px inherit;font-family:inherit;text-decoration:none;cursor:pointer;transition:background .15s,color .15s}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:100px;border:1px solid transparent;font-family:inherit;font-size:16px;line-height:24px;font-weight:500;text-decoration:none;cursor:pointer;transition:background .15s,color .15s}
 .btn--cta{background:var(--kdl-color-secondary-01);color:#fff}.btn--cta:hover{background:var(--kdl-color-secondary-01-600)}
 .btn--secondary{background:transparent;border-color:var(--kdl-color-primary-accent);color:var(--kdl-color-primary-accent-600)}
 .btn--secondary:hover{background:var(--kdl-color-primary-accent);color:#fff}
